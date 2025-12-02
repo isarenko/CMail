@@ -11,7 +11,7 @@ private:
     std::string street;
     std::string home;
     std::string flat;
-    int placeType; // 1 - город, 2 - сельская местность
+    int placeType; // 1 - РіРѕСЂРѕРґ, 2 - СЃРµР»СЊСЃРєР°СЏ РјРµСЃС‚РЅРѕСЃС‚СЊ
 
 public:
     static int count;

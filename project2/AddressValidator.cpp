@@ -3,15 +3,15 @@
 std::vector<std::string> AddressValidator::validate(const CMail& m) {
     std::vector<std::string> errors;
 
-    if (m.getCountry().empty()) errors.push_back("Страна не указана");
-    if (m.getIndex().empty()) errors.push_back("Индекс не указан");
-    if (m.getRegion().empty()) errors.push_back("Область не указана");
-    if (m.getArea().empty()) errors.push_back("Район не указан");
-    if (m.getLocality().empty()) errors.push_back("Населенный пункт не указан");
-    if (m.getStreet().empty()) errors.push_back("Улица не указана");
-    if (m.getHome().empty()) errors.push_back("Дом не указан");
-    if (m.getFlat().empty()) errors.push_back("Квартира не указана");
-    if (m.getPlaceType() == 0) errors.push_back("Тип местности не выбран");
+    if (m.getCountry().empty()) errors.push_back("РЎС‚СЂР°РЅР° РЅРµ СѓРєР°Р·Р°РЅР°");
+    if (m.getIndex().empty()) errors.push_back("РРЅРґРµРєСЃ РЅРµ СѓРєР°Р·Р°РЅ");
+    if (m.getRegion().empty()) errors.push_back("РћР±Р»Р°СЃС‚СЊ РЅРµ СѓРєР°Р·Р°РЅР°");
+    if (m.getArea().empty()) errors.push_back("Р Р°Р№РѕРЅ РЅРµ СѓРєР°Р·Р°РЅ");
+    if (m.getLocality().empty()) errors.push_back("РќР°СЃРµР»РµРЅРЅС‹Р№ РїСѓРЅРєС‚ РЅРµ СѓРєР°Р·Р°РЅ");
+    if (m.getStreet().empty()) errors.push_back("РЈР»РёС†Р° РЅРµ СѓРєР°Р·Р°РЅР°");
+    if (m.getHome().empty()) errors.push_back("Р”РѕРј РЅРµ СѓРєР°Р·Р°РЅ");
+    if (m.getFlat().empty()) errors.push_back("РљРІР°СЂС‚РёСЂР° РЅРµ СѓРєР°Р·Р°РЅР°");
+    if (m.getPlaceType() == 0) errors.push_back("РўРёРї РјРµСЃС‚РЅРѕСЃС‚Рё РЅРµ РІС‹Р±СЂР°РЅ");
 
     return errors;
 }
